@@ -22,7 +22,7 @@
                 android:id="@+id/login_ac_emailtxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="email" />
+                android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -35,7 +35,7 @@
                 android:id="@+id/login_ac_passwordtxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="password" />
+                android:hint="@string/password" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -43,7 +43,7 @@
             android:id="@+id/login_ac_loginbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giriş Yap"
+            android:text="@string/login"
             android:backgroundTint="@color/colorPrimary"
             android:textColor="#fff"
             android:background="#fff"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:text="Hesabın yok mu? Kayıt Ol"
+        android:text="@string/not_yet_account"
         android:layout_marginBottom="10dp"
         android:textStyle="bold"
         android:textSize="18sp"

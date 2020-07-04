@@ -6,4 +6,9 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="not_yet_account">Don\'t have an account? Register</string>
+    <string name="flname">First and Last Name</string>
+    <string name="password_again">Password Again</string>
+    <string name="username">Username</string>
+    <string name="already_account">Do you already have an account? Login</string>
+    <string name="register">Register</string>
 </resources>
