@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_ac_emailtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_ac_passwordtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/login_ac_loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#fff"
+            android:background="#fff"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:defaultFocusHighlightEnabled="true"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"></Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_ac_registertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Hesabın yok mu? Kayıt Ol"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"></TextView>
+
+</RelativeLayout>

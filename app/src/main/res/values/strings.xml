@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FunMate</string>
+
+    <!--splash activity-->
+    <string name="developed_by">Sergen KOCA tarafında geliştirildi</string>
+
+    <!--login activity-->
+    <string name="email">Eposta</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="not_yet_account">Hesabın yok mu? Kayıt Ol</string>
+
 </resources>

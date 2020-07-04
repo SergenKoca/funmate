@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FunMate</string>
+    <string name="developed_by">Developed by Sergen KOCA</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="not_yet_account">Don\'t have an account? Register</string>
+</resources>
