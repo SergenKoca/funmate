@@ -43,7 +43,9 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validateInputs();
+                if(validateInputs()){
+                    registerUser();
+                }
             }
         });
 
@@ -65,40 +67,45 @@ public class RegisterActivity extends AppCompatActivity {
             }
             else{
                 if(flname.getText().toString().isEmpty()){
-                    flname.setError("isim ve soyisim gerekli");
+                    flname.setError(getString(R.string.need_flname));
                 }
                 if(username.getText().toString().isEmpty()){
-                    username.setError("kullanıcı adı gerekli");
+                    username.setError(getString(R.string.need_username));
                 }
                 if(email.getText().toString().isEmpty()){
-                    email.setError("eposta gerekli");
+                    email.setError(getString(R.string.need_email));
                 }
                 if(password.getText().toString().isEmpty()){
-                    password.setError("şifre gerekli");
+                    password.setError(getString(R.string.need_password));
                 }
                 if(passwordAgain.getText().toString().isEmpty()){
-                    passwordAgain.setError("şifre onayı gerekli");
+                    passwordAgain.setError(getString(R.string.need_password_again));
                 }
                 return false;
             }
         }
         else{
             if(flname.getText() == null){
-                flname.setError("isim ve soyisim gerekli");
+                flname.setError(getString(R.string.need_flname));
             }
             if(username.getText() == null){
-                username.setError("kullanıcı adı gerekli");
+                username.setError(getString(R.string.need_username));
             }
             if(email.getText() == null){
-                email.setError("eposta gerekli");
+                email.setError(getString(R.string.need_email));
             }
             if(password.getText() == null){
-                password.setError("şifre gerekli");
+                password.setError(getString(R.string.need_password));
             }
             if(passwordAgain.getText() == null){
-                passwordAgain.setError("şifre onayı gerekli");
+                passwordAgain.setError(getString(R.string.need_password_again));
             }
             return false;
         }
     }
+
+    private void registerUser(){
+
+    }
+
 }

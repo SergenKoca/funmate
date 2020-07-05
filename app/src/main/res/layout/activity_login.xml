@@ -41,7 +41,7 @@
 
         <Button
             android:id="@+id/login_ac_loginbtn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login"
             android:backgroundTint="@color/colorPrimary"
@@ -49,11 +49,17 @@
             android:background="#fff"
             android:textSize="18sp"
             android:textAllCaps="false"
+            android:layout_marginStart="5dp"
             android:defaultFocusHighlightEnabled="true"
             android:layout_marginTop="5dp"
             android:layout_gravity="end"
             android:layout_marginEnd="5dp"></Button>
-
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/login_ac_google_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
     </LinearLayout>
 
     <TextView
@@ -67,5 +73,6 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"></TextView>
+
 
 </RelativeLayout>
