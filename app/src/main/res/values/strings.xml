@@ -24,5 +24,9 @@
     <string name="need_flname">isim ve soyisim gerekli</string>
     <string name="need_username">kullanıcı adı gerekli</string>
     <string name="need_password_again">şifre onayı gerekli gerekli</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
