@@ -1,13 +1,22 @@
 package com.sergenkoca.funmate;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -105,7 +114,29 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void registerUser(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.setCancelable(false);
+        ProgressBar progressBar = new ProgressBar(RegisterActivity.this);
+        alertDialog.setView(progressBar);
+        alertDialog.show();
 
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString())
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            // database'e kaydet ve mainActivity'e ilerle
+                        }
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                alertDialog.cancel();
+                Toast.makeText(RegisterActivity.this, "Kayıt Olurken Bir Hata Meydana Geldi", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }
