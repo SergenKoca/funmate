@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sergenkoca.funmate.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.sergenkoca.funmate.ui.profile.ProfileFragment"
+        android:label="@string/profil"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.sergenkoca.funmate.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.sergenkoca.funmate.ui.activities.AcitivitiesFragment"
+        android:label="@string/activities"
+        tools:layout="@layout/fragment_activities" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.sergenkoca.funmate.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="com.sergenkoca.funmate.ui.messages.MessagesFragment"
+        android:label="@string/messages"
+        tools:layout="@layout/fragment_messages" />
 </navigation>

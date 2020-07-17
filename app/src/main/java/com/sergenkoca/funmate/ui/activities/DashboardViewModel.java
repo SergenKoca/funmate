@@ -1,4 +1,4 @@
-package com.sergenkoca.funmate.ui.dashboard;
+package com.sergenkoca.funmate.ui.activities;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

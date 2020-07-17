@@ -1,4 +1,4 @@
-package com.sergenkoca.funmate.ui.home;
+package com.sergenkoca.funmate.ui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

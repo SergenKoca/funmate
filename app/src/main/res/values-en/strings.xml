@@ -19,4 +19,7 @@
     <string name="login_with_google">You can login with your Google account</string>
     <string name="google_sign_in_error">Login With Google Failed</string>
     <string name="auth_error">Authorization Error</string>
+    <string name="activities">Aktiviteler</string>
+    <string name="profil">Profile</string>
+    <string name="messages">Messages</string>
 </resources>

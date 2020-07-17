@@ -1,4 +1,4 @@
-package com.sergenkoca.funmate.ui.notifications;
+package com.sergenkoca.funmate.ui.messages;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

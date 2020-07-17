@@ -1,4 +1,4 @@
-package com.sergenkoca.funmate.ui.notifications;
+package com.sergenkoca.funmate.ui.messages;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.sergenkoca.funmate.R;
 
-public class NotificationsFragment extends Fragment {
+public class MessagesFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
 
@@ -22,7 +22,7 @@ public class NotificationsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        View root = inflater.inflate(R.layout.fragment_messages, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
         notificationsViewModel.getText().observe(this, new Observer<String>() {
             @Override
